@@ -126,7 +126,7 @@ namespace SocketUDP
                     if (udpSocket != null && udpSocket.IsBound)
                     {
                         // Définir un timeout pour éviter les blocages
-                        udpSocket.ReceiveTimeout = 1000; // 1 seconde
+                        udpSocket.ReceiveTimeout = 10000; // 10 seconde
 
                         // Utiliser ReceiveFrom pour obtenir l'adresse de l'expéditeur
                         int bytesReceived = udpSocket.ReceiveFrom(buffer, ref remoteEP);
