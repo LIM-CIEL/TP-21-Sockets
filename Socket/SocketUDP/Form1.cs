@@ -126,11 +126,11 @@ namespace SocketUDP
             {
                 if (ex.SocketErrorCode == SocketError.TimedOut)
                 {
-                    MessageBox.Show("Timeout: Aucun message reçu.");
+                    MessageBox.Show("Aucun message reçu.");
                 }
                 else
                 {
-                    MessageBox.Show($"Erreur lors de la réception du message : {ex.Message}");
+                    MessageBox.Show($"Erreur lors de la réception du message : {ex.Message}"); 
                 }
             }
         }
@@ -142,4 +142,4 @@ namespace SocketUDP
         }
     }
 }
- 
+  
